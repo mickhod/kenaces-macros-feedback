@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea for Kenace's Stash Finder
+description: Suggest an idea for Kenace's Macros
 title: "[Feature]: "
 body:
   - type: textarea
