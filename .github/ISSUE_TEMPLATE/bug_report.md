@@ -1,35 +1,39 @@
----
 name: Bug report
-about: Report a problem with kenace's Macros
+description: Report a problem with Kenace's Stash Finder
 title: "[Bug]: "
-labels: bug
-assignees: ""
----
-
-## Describe the bug
-A clear description of what went wrong.
-
-## Steps to reproduce
-1.
-2.
-3.
-
-## Expected behavior
-What you expected to happen.
-
-## Actual behavior
-What happened instead?
-
-## Environment
-- Minecraft version:
-- Mod version:
-- Fabric Loader version:
-- Other mods installed:
-
-## Logs or screenshots
-Paste relevant error messages or add screenshots.
-Remove personal information before posting logs.
-
-## Checklist
-- [ ] I checked whether this issue has already been reported.
-- [ ] I can reproduce this with the latest version.
+body:
+  - type: input
+    id: minecraft
+    attributes:
+      label: Minecraft version
+      placeholder: "26.1.2"
+    validations:
+      required: true
+  - type: input
+    id: mod
+    attributes:
+      label: Mod version
+      placeholder: "1.3.0"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can it be reproduced?
+      description: List the steps to trigger the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or crash log
+      description: Add any helpful screenshots or log details.
+    validations:
+      required: false
