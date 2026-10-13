@@ -1,5 +1,5 @@
 name: Bug report
-description: Report a problem with Kenace's Stash Finder
+description: Report a problem with Kenace's Macros
 title: "[Bug]: "
 body:
   - type: input
