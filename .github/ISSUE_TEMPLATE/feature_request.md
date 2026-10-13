@@ -1,19 +1,25 @@
----
 name: Feature request
-about: Suggest an improvement or new feature
+description: Suggest an idea for Kenace's Stash Finder
 title: "[Feature]: "
-labels: enhancement
-assignees: ""
----
-
-## Is your feature request related to a problem?
-Describe the problem or limitation you’re experiencing.
-
-## Describe the solution
-What would you like the mod to do?
-
-## Alternatives considered
-Describe any alternative solutions or features you’ve considered.
-
-## Additional context
-Add examples, screenshots, or other details that would help explain the idea.
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to be able to do?
+      description: Describe the problem or need behind the idea.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: How should it work?
+      description: Describe your proposed solution.
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: Anything else?
+      description: Add screenshots or other details, if helpful.
+    validations:
+      required: false
